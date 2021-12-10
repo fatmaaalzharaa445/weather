@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Weather</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap /CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.scss">
+</head>
+
+<body>
+  <header class="header ">
+    <div class="">
+      <nav class="navbar navbar-expand-lg mx-5">
+        <div class="container-fluid">
+          
+          <img src="./images/cloud.gif" class="img  w-50 " alt="">   <a class="navbar-brand" href="#">Weather</a>
+          <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 px-3 mb-lg-0 text-center">
+              <li class="nav-item  rounded-pill ">
+                <a  class="nav-link active " aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link active" aria-current="page" href="#about">Aboute</a>
+              </li>
+
+              <li class="nav-item rounded-pill ">
+                <a    class="nav-link active" aria-current="page" href="#search">Search</a>
+              </li>
+
+              <li class="nav-item rounded-pill ">
+                <a class="nav-link active" aria-current="page" href="#Mobile">Mobile App</a>
+              </li>
+              <li class="nav-item rounded-pill">
+                <a class="nav-link active" aria-current="page" href="#Subscribe">Subscribe</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+
+  </header>
+
+
+  <section class="mt-5 pt-2 " id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-6 col-sm-12 mt-4 pe-5 ">
+          <h3 class=" h1 py-3">Weather App</h3>
+          <p class="p">Having an up to date information about the weather helps us to take well-read decisions. These
+            weather apps constantly update the forecasts for a day or hour or sometimes for even a minute. These can
+            be simply termed as the compact weather devices, as they do not only tell about the temperature of that
+            specific region instead they can describe the accurate time of the sunrise and sunset, the time of the
+            rainfall, humidity levels, etc.</p>
+        </div>
+        <div class=" col-lg-5 col-md-6 ps-5">
+          <img src="./images/raining-animate-1.svg" class="w-100" alt="">
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+ 
+
+    <div class="  position-relative mt-5" id="search">
+      <input type="search" id="search-bar"  placeholder="&#xF002;  Search City..." class="form-control  w-50 m-auto"
+        style="font-family:Arial, FontAwesome" />
+      
+</div>
+<div class="container mt-5">
+  <div class="row">
+
+
+
+ 
+
+  
+    
+    
+ 
+<!-- today -->
+<div class=" col-lg-4  col-sm-12 col-md-4 my-sm-3 " >
+
+  <div class="  shadow  text-center card  ">
+    <div class=" head d-flex justify-content-around pt-2 shadow fs-5">
+      <p id="today"></p>
+      <p id="todaydate"></p>
+    </div>
+    <div class="pt-3">
+      <span id="location" class="fs-2 "></span>
+      <div class="d-flex justify-content-around ">
+        <div class="pt-4">
+          <h2 id="today-degree" class="d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+        </div>
+        <img id="today-icon" width="90"  />
+      </div>
+      <p id="today-descraption" class=" fs-5"></p>
+      <div class="d-flex justify-content-center m-auto mb-3  p-2 fs-6">
+        <i class="fas fa-umbrella pe-1 text-warning "></i>
+        <span id="humidty" class=""></span> <span class="pe-2">%</span>
+
+        <i class="fas fa-wind  pe-1 text-secondary "></i>
+        <span id="wind"></span> <span class="pe-2">km/h</span>
+
+        <i class="far fa-compass pe-1 text-dark  "></i>
+        <span id="compass"></span>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+    
+<!-- Next day -->
+
+<div class="mediascreeen  col-lg-4 col-sm-12 col-md-4 my-sm-3 ">
+  <div class="   card   text-center  shadow ">
+    <div class="head d-flex  justify-content-around  pt-2  fs-5">
+      <p class="nextDay"></p>
+      <p class="nextDate"></p>
+    </div>
+  
+    <div class="">
+      <div class="">
+        <img class="nextDay-icon" width="90"/>
+      </div>
+      <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+      <br>
+      <p class="min-degree fs-2 d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+      <p class="nextDay-description pb-3 fs-6 "></p>
+    </div>
+  </div>
+
+</div>
+
+<div class=" col-lg-4 col-sm-12 col-md-4  my-sm-3  ">
+  <div class=" card  text-center shadow ">
+    <div class="head d-flex  justify-content-around  pt-2  fs-5">
+      <p class="nextDay"></p>
+      <p class="nextDate"></p>
+    </div>
+  
+    <div class="">
+      <div class="">
+        <img class="nextDay-icon " width="90"/>
+      </div>
+      <h2 class="max-degree d-inline-block "></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+      <br>
+      <p class="min-degree fs-2 d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+      <p class="nextDay-description pb-3 fs-6 "></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+ 
+
+  </div>
+</div>
+   
+
+
+  <section class="mt-5 pt-5" id="Mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ">
+          <img src="./images/download.png" class="w-100" alt="">
+        </div>
+        <div class="col-md-8 ">
+          <div class="mt-5 pt-5 text-center">
+            <h3>Mobile App</h3>
+            <p class="p">This weather app is one of best free weather apps with full features:
+              Local weather weather map (weather map service) and weather widgets.</p>
+            <button class="btn">Download Android </button>
+            <button class="btn "> Download iOS</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- //email -->
+
+
+  <div class="container mb-5 mt-5 pt-5" id="Subscribe">
+    <div class="row mt-5 ">
+      <div class=" col-md-8 text-center  pt-4 ">
+        <h3>Subscribe</h3>
+        <p class="p">Get daily weather updates, quotes & more..</p>
+        <input  id="inputEmail" type="email" placeholder="enter your email subscribe.." class="w-75 form-control m-auto ">
+      <div id="emailInputAlert" class="d-none text-danger my-3">Invalid Email Address!</div>
+
+        <button id="subscribeBtn" class="btn mt-3 "> Subscribe</button>
+
+      </div>
+
+      <div class="col-md-4  ">
+        <img src="./images/subscribe.png" class="w-100 " alt="">
+
+      </div>
+
+    </div>
+  </div>
+<!-- light box submit -->
+
+<div id="lighboxInfo" class="light-box d-none align-items-end justify-content-around   ">
+<div class="row mb-5 pb-5">
+
+  <div id="lightbox" class=" col-lg-12 col-md-12 col-sm-12 text-center mb-5 rounded ">
+
+    <img src="./images/submit-lightbox.svg" class="w-75" alt="">
+    
+    
+    <div>
+      <h5>Congratulations!</h5>
+       <p class="p">You can now check your email<br>to verify your account</p>
+       <button class="btn btn-info mb-3 " id="closeBtn">Close</button>
+    </div>
+    </div>
+
+
+</div>
+
+</div>
+
+  <footer class="text-center " id="about">
+    <p class="pt-3 px-4">Copyright © 2021 Designed by Menna El-adl. All rights reserved</p>
+    <div class="media">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-google-plus"></i>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
